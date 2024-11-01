@@ -11,64 +11,29 @@
         <div class="container">
             <h1>Estudo Posts</h1>
             <div class="profile">
-                <img src="./image/foto.jpg" alt="">
-                <h4>lindbergpg</h4>
+                <img src="./image/lindberg.jpg" alt="">
+                <h4 id="user">lindberg</h4>
+                <select name="" id="">
+                    <option value="lindberg">lindberg</option>
+                    <option value="user1">user1</option>
+                    <option value="user2">user2</option>
+                </select>
             </div>
         </div>
     </header>
     <section>
         <div class="container">
-            <form>
-                <textarea name="boxText" id="boxText" rows="3" maxlength="128" placeholder="Sua mensagem!"></textarea>
+            <form id="form-post">
+                <textarea name="boxText" id="boxText" rows="3" maxlength="128" placeholder="Sua mensagem!" required></textarea>
                 <button type="submit">Enviar!</button>
             </form>
             <div class="postagem">
-                <ul>
-                    <li>
-                        <div class="profile">
-                            <img src="./image/foto.jpg" alt="">
-                            <h4>lindbergpg</h4>
-                        </div>
-                        <p class="post">Hello world!</p>
-                    </li>
-                    <li>
-                        <div class="profile">
-                            <img src="./image/foto.jpg" alt="">
-                            <h4>lindbergpg</h4>
-                        </div>
-                        <p class="post">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ha been the industry's standard dummy te.</p>
-                    </li>
-                    <li>
-                        <div class="profile">
-                            <img src="./image/foto.jpg" alt="">
-                            <h4>lindbergpg</h4>
-                        </div>
-                        <p class="post">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </li>
-                    <li>
-                        <div class="profile">
-                            <img src="./image/foto.jpg" alt="">
-                            <h4>lindbergpg</h4>
-                        </div>
-                        <p class="post">Hello world!</p>
-                    </li>
-                    <li>
-                        <div class="profile">
-                            <img src="./image/foto.jpg" alt="">
-                            <h4>lindbergpg</h4>
-                        </div>
-                        <p class="post">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ha been the industry's standard dummy te.</p>
-                    </li>
-                    <li>
-                        <div class="profile">
-                            <img src="./image/foto.jpg" alt="">
-                            <h4>lindbergpg</h4>
-                        </div>
-                        <p class="post">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </li>
+                <ul id="postList">
+
                 </ul>
             </div>
         </div>
     </section>
+    <script src="./script/main.js"></script>
 </body>
 </html>
