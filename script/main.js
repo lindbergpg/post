@@ -1,5 +1,5 @@
 var user = document.getElementById('user')
-var userphoto = './image/foto.jpg'
+var userphoto = `./image/${user.value}.jpg`
 var message = document.getElementById('boxText')
 
 var form = document.getElementById('form-post')
@@ -10,7 +10,6 @@ form.addEventListener('submit', function(e) {
     post()
 
     message.value = ''
-
 })
 
 function post() {
@@ -18,7 +17,7 @@ function post() {
     let postDados = '<li>'
         postDados += '<div class="profile">'
         postDados += `<img src="${userphoto}" alt="">`
-        postDados += `<h4 id="user">${user.textContent}</h4>`
+        postDados += `<h4 id="user">${user.value}</h4>`
         postDados += '</div>'
         postDados += `<p class="post">${message.value}</p>`
         postDados += '</li>'

@@ -15,7 +15,7 @@
 header {
     background-color: #0f9bdc;
     border-bottom: 1px solid #ccc;
-    padding: 16px 0;
+    padding: 4px 0;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -34,7 +34,7 @@ header .profile {
 }
 
 header .profile img {
-    max-width: 56px;
+    max-width: 32px;
     width: 100%;
     border-radius: 50%;
     border: 2px solid #ccc;
@@ -42,17 +42,27 @@ header .profile img {
     cursor: pointer;
 }
 
+header .profile select {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+}
+
+
 h1 {
     color: #fff;
-    font-size: 40px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 h4 {
     font-size: 12px;
+    font-weight: 400;
 }
 
 section {
-    padding-top: 96px;
+    padding-top: 48px;
     padding-bottom: 40px;
 }
 
@@ -123,7 +133,7 @@ form button {
 }
 
 .post {
-    font-size: 16px;
+    font-size: 14px;
     padding-top: 16px;
     line-height: 22px;
 }
